@@ -5,10 +5,10 @@ const numb2 = 4;
 console.log('the difference between ' + numb1 + ' and 2 is ' + numb2);
 
 //Easy
-const name1 = 'Van';
-const name2 = 'Miku';
+const name1 = 'Miku';
+const name2 = 'Van';
 
-console.log('The name ' + name1 + ' is loner than ' + name2 + ' by 2 characters');
+console.log('The name ' + name1 + ' is longer than ' + name2 + ' by 1 characters');
 
 //Medium
 const popUp = prompt('Enter a word: ');
@@ -22,8 +22,8 @@ if (popUp === popUp.toUpperCase()) {
 }
 
 //Hard
-const x = 40;
-const y = 10;
+let x = 40;
+let y = 10;
 
 function add() {
     return x + y;
