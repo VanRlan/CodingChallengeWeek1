@@ -25,22 +25,22 @@ if (popUp === popUp.toUpperCase()) {
 let x = 40;
 let y = 10;
 
-function add() {
+function add(x, y) {
     return x + y;
 }
 add();
 
-function subtract() {
+function subtract(x, y) {
     return x - y;
 }
 subtract();
 
-function multiply() {
+function multiply(x, y) {
     return x * y;
 }
 multiply();
 
-function divide() {
+function divide(x, y) {
     return x / y;
 }
 divide();
@@ -50,17 +50,24 @@ const num1 = prompt("What would you like Number1 to be: ");
 const symbol = prompt("Would you like to add(+), subtract(-), multiply(*), or divide(/): ");
 const num2 = prompt("What would you like Number2 to be: ");
 
-if (symbol == "+") {
-    add(num1, num2);
+const n1 = Number(num1);
+const n2 = Number(num2);
+
+if (symbol === "+") {
+    const sum = add (n1, n2);
+    console.log(sum);
 }
-else if (symbol == "-") {
-    subtract(num1, num2);
+else if (symbol === "-") {
+    const sub = subtract (n1, n2);
+    console.log(sub);
 }
-else if (symbol == "*") {
-    multiply(num1, num2);
+else if (symbol === "*") {
+    const mult = multiply (n1, n2);
+    console.log(mult);
 }
-else if (symbol == "/") {
-    divide(num1, num2);
+else if (symbol === "/") {
+    const divi = divide (n1, n2);
+    console.log(divi);
 }
 else {
     console.log("-_- that operation is not available, try again...");
